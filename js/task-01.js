@@ -19,11 +19,12 @@ console.log('Задание 1');
 const logItems = function(array) {
     let arrayLength = array.length;
 
-    for (let i = 0; i<arrayLength; i += 1 ) {
+    for (let i = 0; i < arrayLength; i += 1 ) {
 
         console.log(`${i + 1} - ${array[i]}`);
 
     }
+
   };
 
   logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);

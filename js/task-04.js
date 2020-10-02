@@ -26,7 +26,7 @@
 // );
 // // вернется форматированная строка
 
-console.log('Задание 3');
+console.log('Задание 4');
 
 const formatString = function(string) {
     const stringLength = string.length;

@@ -19,9 +19,10 @@
 console.log('Задание 5');
 
 const checkForSpam = function(message) {
+    
     const messageLower = message.toLowerCase();
 
-    console.log(messageLower.includes('spam')||messageLower.includes('sale'));
+    console.log(messageLower.includes('spam') || messageLower.includes('sale'));
 
 };
 
