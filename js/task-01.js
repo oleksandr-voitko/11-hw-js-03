@@ -1,32 +1,35 @@
 // Задание 1
-// Напиши функцию logItems(array), которая получает массив и использует цикл for, который для каждого элемента массива будет выводить в консоль сообщение в формате [номер элемента] - [значение элемента].
+// Напиши скрипт, который, для объекта user, последовательно:
 
-// Нумерация должна начинаться с 1. К примеру для первого элемента массива ['Mango', 'Poly', 'Ajax'] с индексом 0 будет выведено '1 - Mango', а для индекса 2 выведет '3 - Ajax'.
-
-// const logItems = function(array) {
-//   // твой код
+// добавляет поле mood со значением 'happy'
+// заменяет значение hobby на 'skydiving'
+// заменяет значение premium на false
+// выводит содержимое объекта user в формате ключ:значение используя Object.keys() и for...of
+// const user = {
+//   name: 'Mango',
+//   age: 20,
+//   hobby: 'html',
+//   premium: true,
 // };
-
-// /*
-//  * Вызовы функции для проверки работоспособности твоей реализации.
-//  */
-// logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
-
-// logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
 
 console.log('Задание 1');
 
-const logItems = function(array) {
-    let arrayLength = array.length;
+const user = {
+  name: 'Mango',
+  age: 20,
+  hobby: 'html',
+  premium: true,
+};
 
-    for (let i = 0; i < arrayLength; i += 1 ) {
+user.mood = 'happy';
 
-        console.log(`${i + 1} - ${array[i]}`);
-
+const keys = Object.keys(user);
+for (const key of keys) {
+    if (key === 'hobby') {
+        user[key] = 'skydiving';
     }
-
-  };
-
-  logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
-  
-  logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+    else if (key === 'premium') {
+        user[key] = false;
+    }
+    console.log(key,':',user[key]);
+}
