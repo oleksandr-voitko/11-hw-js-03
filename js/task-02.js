@@ -23,7 +23,7 @@ const countProps = function(obj) {
   for (const key of keys) {
     numberOfProperties += 1;
   }
-  return console.log(numberOfProperties);
+  return numberOfProperties;
 };
 
 /*
