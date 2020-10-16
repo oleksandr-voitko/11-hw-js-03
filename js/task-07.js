@@ -119,12 +119,12 @@ const account = {
     this.balance += amount;
 
     if (this.transactions.length === 0) {
-      this.transactions[0] = this.createTransaction(amount, 'deposit');
+      this.transactions[0] = this.createTransaction(amount, Transaction.DEPOSIT);
     } else {
       for (const transaction of this.transactions){
           id = transaction.id + 1;
       }
-      this.transactions[id] = this.createTransaction(amount, 'deposit');
+      this.transactions[id] = this.createTransaction(amount, Transaction.DEPOSIT);
     }
   },
   
@@ -147,12 +147,12 @@ const account = {
       this.balance -= amount;
 
       if (this.transactions.length === 0) {
-        this.transactions[0] = this.createTransaction(amount, 'withdraw');
+        this.transactions[0] = this.createTransaction(amount, Transaction.WITHDRAW);
       } else {
         for (const transaction of this.transactions){
             id = transaction.id + 1;
         }
-        this.transactions[id] = this.createTransaction(amount, 'withdraw');
+        this.transactions[id] = this.createTransaction(amount, Transaction.WITHDRAW);
       }
     }
     
