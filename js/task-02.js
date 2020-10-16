@@ -14,11 +14,11 @@
 
 // console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
 
-console.log('Задание 2');
+console.log("Задание 2");
 
-const countProps = function(obj) {
+const countProps = function (obj) {
   let numberOfProperties = 0;
-  
+
   const keys = Object.keys(obj);
   for (const key of keys) {
     numberOfProperties += 1;
@@ -31,6 +31,6 @@ const countProps = function(obj) {
  */
 console.log(countProps({})); // 0
 
-console.log(countProps({ name: 'Mango', age: 2 })); // 2
+console.log(countProps({ name: "Mango", age: 2 })); // 2
 
-console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
+console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })); // 3

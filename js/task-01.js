@@ -12,24 +12,23 @@
 //   premium: true,
 // };
 
-console.log('Задание 1');
+console.log("Задание 1");
 
 const user = {
-  name: 'Mango',
+  name: "Mango",
   age: 20,
-  hobby: 'html',
+  hobby: "html",
   premium: true,
 };
 
-user.mood = 'happy';
+user.mood = "happy";
 
 const keys = Object.keys(user);
 for (const key of keys) {
-    if (key === 'hobby') {
-        user[key] = 'skydiving';
-    }
-    else if (key === 'premium') {
-        user[key] = false;
-    }
-    console.log(key,':',user[key]);
+  if (key === "hobby") {
+    user[key] = "skydiving";
+  } else if (key === "premium") {
+    user[key] = false;
+  }
+  console.log(key, ":", user[key]);
 }
